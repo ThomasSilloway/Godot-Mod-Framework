@@ -3,6 +3,30 @@ A Godot game template that is set up for mod support from the beginning
 
 Inspired by: https://www.youtube.com/watch?v=tTdToEu6x8U and https://www.youtube.com/watch?v=K3MnEvrC8TA
 
+## Getting Started
+
+This repository is set up as a GitHub template. To create your own project based on this template:
+
+1. Visit https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
+2. Follow the instructions to create a new repository from this template
+
+### Updating From Template
+
+If you need to pull in updates from this template after creating your game, you can do so using the following Git commands:
+
+```bash
+# Add this template repository as a remote
+git remote add template [URL of the template repo]
+
+# Fetch all changes
+git fetch --all
+
+# Merge changes from the template's branch to your current branch
+git merge template/[branch to merge] --allow-unrelated-histories
+```
+
+For more details, see: https://help.github.com/en/articles/adding-a-remote
+
 ## Purpose
 
 Build the game as a collection of mods to ensure that your game properly supports modders upon release
@@ -43,4 +67,5 @@ Build the game as a collection of mods to ensure that your game properly support
 ## Usage - Automated
 - Update `scripts/build.bat` to match your paths
 - Run the build batch file to automatically create versioned builds
+-
 
