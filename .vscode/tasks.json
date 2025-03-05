@@ -12,7 +12,7 @@
 		{
 			"label": "Build Startup",
 			"type": "shell",
-			"command": "${workspaceFolder}/projects/main/build.bat",
+			"command": "${workspaceFolder}/projects/startup/build.bat",
 			"problemMatcher": []
 		},
 		{
