@@ -44,10 +44,3 @@ Build the game as a collection of mods to ensure that your game properly support
 - Update `scripts/build.bat` to match your paths
 - Run the build batch file to automatically create versioned builds
 
-## Credits
-
-### Audio
-- Music and sound effects from:
-  - [Pixabay.com](https://pixabay.com)
-  - [Zapsplat.com](https://www.zapsplat.com)
-
