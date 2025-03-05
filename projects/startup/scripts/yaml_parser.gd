@@ -2,7 +2,7 @@ extends Node
 
 func parse_file(path: String) -> Variant:
 	if not FileAccess.file_exists(path):
-		push_error("YAML Parser: File not found - " + path)
+		push_warning("YAML Parser: File not found - " + path)
 		return null
 		
 	var file = FileAccess.open(path, FileAccess.READ)
@@ -13,7 +13,7 @@ func parse_file(path: String) -> Variant:
 		
 	var content = file.get_as_text()
 	if content.is_empty():
-		push_error("YAML Parser: File is empty")
+		push_error("YAML Parser: File is empty " + path)
 		return null
 		
 	var result = {}
@@ -42,6 +42,7 @@ func parse_file(path: String) -> Variant:
 	file.close()
 	
 	if result.is_empty():
-		push_error("YAML Parser: No valid data found in file")
+		push_warning("YAML Parser: No valid data found in file " + path)
+		return null
 	
-	return result if not result.is_empty() else null 
+	return result 
