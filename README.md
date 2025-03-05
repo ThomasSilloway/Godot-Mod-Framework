@@ -1,5 +1,5 @@
 # Godot Mod Framework
-A game template that is set up for mod support from the beginning
+A Godot game template that is set up for mod support from the beginning
 
 Inspired by: https://www.youtube.com/watch?v=tTdToEu6x8U and https://www.youtube.com/watch?v=K3MnEvrC8TA
 
