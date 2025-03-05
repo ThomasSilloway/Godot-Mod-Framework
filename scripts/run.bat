@@ -1,13 +1,18 @@
 @echo off
 setlocal
 
-:: Get the directory where this script is located
+:: Get the script's directory
 set "script_dir=%~dp0"
-:: Remove trailing backslash
-set "script_dir=%script_dir:~0,-1%"
+pushd %script_dir%..
+set "workspace_root=%cd%"
+popd
 
-:: Define the base build directory relative to script location
-set build_path=%script_dir%\..\build\
+:: Define the base build directory
+set build_path=%workspace_root%\build\
+
+echo Current script directory: %script_dir%
+echo Workspace path: %workspace_root%
+echo Builds folder path: %build_path%
 
 :: Find the latest build folder by sorting directories by name (since they're datetime-based)
 :: Skip the mods folder by adding a findstr filter
@@ -24,12 +29,6 @@ if not defined latest_build (
 
 set run_path_file=startup.console.exe
 set full_path=%build_path%%latest_build%\%run_path_file%
-
-:: Print debug information
-echo Script directory: %script_dir%
-echo Build path: %build_path%
-echo Latest build folder: %latest_build%
-echo Full path to executable: %full_path%
 
 :: Check if the executable exists
 if exist "%full_path%" (
