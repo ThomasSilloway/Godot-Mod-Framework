@@ -14,6 +14,7 @@ Build the game as a collection of mods to ensure that your game properly support
  - (This repo)
 
 ### Mods built with this template
+ - [Menus](https://github.com/ThomasSilloway/Godot-Mod-Framework-Menus)
  - [Full Game Mod (Flappy Bird Clone)](https://github.com/ThomasSilloway/Godot-Mod-Framework-Flappy-Bird-Clone)
  - [Prototype (Isometric 2D)](https://github.com/ThomasSilloway/Godot-Mod-Framework-Isometric-2D-Game-Starter)
 
