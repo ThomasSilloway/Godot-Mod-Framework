@@ -3,52 +3,25 @@ A Godot game template that is set up for mod support from the beginning
 
 Inspired by: https://www.youtube.com/watch?v=tTdToEu6x8U and https://www.youtube.com/watch?v=K3MnEvrC8TA
 
-## Getting Started
-
-This repository is set up as a GitHub template. To create your own project based on this template:
-
-1. Visit https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
-2. Follow the instructions to create a new repository from this template
-
-### Updating From Template
-
-If you need to pull in updates from this template after creating your game, you can do so using the following Git commands:
-
-```bash
-# Add this template repository as a remote
-git remote add template [URL of the template repo]
-
-# Fetch all changes
-git fetch --all
-
-# Merge changes from the template's branch to your current branch
-git merge template/[branch to merge] --allow-unrelated-histories
-```
-
-For more details, see: https://help.github.com/en/articles/adding-a-remote
-
 ## Purpose
 
 Build the game as a collection of mods to ensure that your game properly supports modders upon release
 
 ## Versions
 
-### Godot Mod Framework Repo
+### Godot Mod Framework
  - Basic version that loads a single mod and prints a hello world message. Can be used as a solid baseline for custom implementation
+ - (This repo)
 
-### TODO: Replace with link to flappy bird clone fork
-[Full Game Mod (Flappy Bird Clone)](https://github.com/ThomasSilloway/GodotModCapableGame/releases/tag/build-2024-02-27-v01)
- - Complete working example of a modular game built entirely with mods
- - Demonstrates two different modding approaches:
-   1. Injection: The Settings mod shows how to inject new UI elements into existing scenes (adds a settings button to main menu)
-   2. Overwriting: The Crazy Bird mod demonstrates how to override existing game files to modify gameplay (changes assets and behavior of the Flappy Bird clone)
- - Includes a functional Flappy Bird clone as the base game
- - Features a clean mod loading system with automatic mod discovery
- - Shows how to handle mod dependencies and load order
-### Known Bugs
- - Fullscreen setting may be bugged on some monitors
- - GUT unit tests are included, but the add-on is not included in the project
- - Futura font is referenced but not added to the repo
+### Mods built with this template
+ - [Full Game Mod (Flappy Bird Clone)](https://github.com/ThomasSilloway/Godot-Mod-Framework-Flappy-Bird-Clone)
+
+## Getting Started
+
+This repository is set up as a GitHub template. To create your own project based on this template:
+
+1. Visit: [Github Template Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+2. Follow the instructions to create a new repository from this template
 
 ## Tech Details
 
@@ -67,5 +40,23 @@ Build the game as a collection of mods to ensure that your game properly support
 ## Usage - Automated
 - Update `scripts/build.bat` to match your paths
 - Run the build batch file to automatically create versioned builds
--
+
+## Updating From Template
+
+Info from: [Stack Overflow](https://stackoverflow.com/questions/56577184/github-pull-changes-from-a-template-repository)
+
+If you need to pull in updates from this template after creating your game, you can do so using the following Git commands:
+
+```bash
+# Add this template repository as a remote
+git remote add template [URL of the template repo]
+
+# Fetch all changes
+git fetch --all
+
+# Merge changes from the template's branch to your current branch
+git merge template/[branch to merge] --allow-unrelated-histories
+```
+
+For more details, see: https://help.github.com/en/articles/adding-a-remote
 
