@@ -60,3 +60,15 @@ git merge template/[branch to merge] --allow-unrelated-histories
 
 For more details, see: https://help.github.com/en/articles/adding-a-remote
 
+## Areas to explore in the future
+I'm not sure if I'll be adding these features, but they are worth exploring if someone wants to tackle them
+- Inside of a mod can you do this?
+  - Can you print out all of the resources?
+  - Can you print out any of the code?
+  - Can you overwrite / update enums in a mod?
+- Add a way to for mods to add their own options to "mod settings"
+- Add a UI to show the mods that are loaded, ideally load and unload mods from inside the game
+
+## Notes
+ - You can overwrite the `startup` project's audio buses with your own custom names
+
